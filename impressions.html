@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>感想 | 城南 × 城西 伝道コラボキャンペーン 2026</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        sans-serif;
+
+      color: #4c4c47;
+      background: #faf8f3;
+
+      line-height: 1.9;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 48svh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 60px 20px;
+
+      text-align: center;
+
+      color: white;
+
+      background: linear-gradient(
+        135deg,
+        #344b57,
+        #263941
+      );
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .hero-small {
+      margin-bottom: 20px;
+
+      font-size: 10px;
+      letter-spacing: 6px;
+
+      opacity: .7;
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      font-size: clamp(32px, 8vw, 48px);
+      font-weight: 400;
+
+      letter-spacing: 5px;
+      line-height: 1.5;
+    }
+
+    .hero p {
+      margin: 22px 0 0;
+
+      font-size: 13px;
+      line-height: 2;
+
+      opacity: .8;
+    }
+
+
+    /* =========================
+       CONTENT
+    ========================= */
+
+    .content {
+      padding: 75px 18px 90px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+
+      margin: 0 auto;
+    }
+
+    .section-label {
+      margin-bottom: 12px;
+
+      text-align: center;
+
+      font-size: 10px;
+      letter-spacing: 6px;
+
+      color: #9b8b75;
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+
+      text-align: center;
+
+      font-size: 27px;
+      font-weight: 400;
+
+      letter-spacing: 3px;
+    }
+
+    .section-description {
+      max-width: 650px;
+
+      margin: 0 auto 50px;
+
+      text-align: center;
+
+      color: #777;
+
+      font-size: 13px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       IMPRESSION CARDS
+    ========================= */
+
+    .impression-list {
+      display: flex;
+      flex-direction: column;
+
+      gap: 22px;
+    }
+
+    .impression-card {
+      position: relative;
+
+      padding: 32px 34px 34px;
+
+      background: #fffdf9;
+
+      border: 1px solid #eee7dc;
+      border-radius: 20px;
+
+      box-shadow:
+        0 10px 30px rgba(70, 60, 45, .06);
+    }
+
+    .number {
+      margin-bottom: 15px;
+
+      color: #b09c82;
+
+      font-size: 10px;
+      letter-spacing: 4px;
+    }
+
+    .impression-text {
+      margin: 0;
+
+      color: #55534e;
+
+      font-size: 14px;
+
+      line-height: 2.05;
+
+      white-space: pre-line;
+    }
+
+
+    /* =========================
+       LAST MESSAGE
+    ========================= */
+
+    .closing {
+      margin-top: 55px;
+
+      padding: 40px 25px;
+
+      text-align: center;
+
+      background: linear-gradient(
+        145deg,
+        #eef2f2,
+        #f8f5ee
+      );
+
+      border-radius: 24px;
+    }
+
+    .closing-title {
+      margin: 0 0 12px;
+
+      color: #425a6b;
+
+      font-size: 20px;
+      font-weight: 400;
+
+      letter-spacing: 3px;
+    }
+
+    .closing p {
+      margin: 0;
+
+      color: #777;
+
+      font-size: 13px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       BACK
+    ========================= */
+
+    .back-section {
+      padding: 45px 20px 55px;
+
+      text-align: center;
+
+      background: #fffaf4;
+    }
+
+    .back-button {
+      display: inline-block;
+
+      padding: 12px 27px;
+
+      border: 1px solid #c8c1b5;
+      border-radius: 50px;
+
+      color: #777;
+
+      text-decoration: none;
+
+      font-size: 12px;
+      letter-spacing: 1px;
+
+      transition:
+        background .2s ease,
+        color .2s ease;
+    }
+
+    .back-button:hover {
+      background: #425a6b;
+
+      border-color: #425a6b;
+
+      color: white;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 38px 20px;
+
+      text-align: center;
+
+      background: #202b31;
+
+      color: #9ca6aa;
+
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      .hero {
+        min-height: 42svh;
+
+        padding: 50px 18px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+
+        letter-spacing: 4px;
+      }
+
+      .content {
+        padding: 60px 14px 75px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .section-description {
+        margin-bottom: 38px;
+
+        font-size: 12px;
+      }
+
+      .impression-list {
+        gap: 16px;
+      }
+
+      .impression-card {
+        padding: 26px 22px 28px;
+
+        border-radius: 17px;
+      }
+
+      .impression-text {
+        font-size: 13px;
+
+        line-height: 2;
+      }
+
+      .closing {
+        padding: 32px 20px;
+      }
+
+    }
+
+
+    /* =========================
+       REDUCED MOTION
+    ========================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="hero-small">
+        JONAN × JOSEI
+      </div>
+
+      <h1>
+        感想
+      </h1>
+
+      <p>
+        3日間のコラボ奉仕を通して<br>
+        寄せられた29件の声をご紹介します。
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTENT
+  ========================= -->
+
+  <main class="content">
+
+    <div class="container">
+
+      <div class="section-label">
+        IMPRESSIONS
+      </div>
+
+      <h2 class="section-title">
+        参加した皆さんの声
+      </h2>
+
+      <p class="section-description">
+        城南・城西会衆の仲間と共に働いた3日間。<br>
+        それぞれが感じた喜びや励み、心に残った出来事をお寄せいただきました。
+      </p>
+
+
+      <div class="impression-list">
+
+
+        <!-- 01 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 01
+          </div>
+
+          <p class="impression-text">エホバとイエス，天使たちコラボして奉仕をする大切さを改めて実感できました。
+
+普段奉仕できない区域での奉仕や初めて奉仕する兄弟姉妹たちと共にコラボを楽しめて良かったです。
+
+このコラボの期間に，「伝道から喜びが得られるように助けてください。」という祈りにエホバが答えてくださったことを肌で感じました。
+
+コラボを盛り上げてくださったことにも感謝です〜＾＾</p>
+
+        </article>
+
+
+        <!-- 02 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 02
+          </div>
+
+            <p class="impression-text">楽しかったです。
+  
+  自分は特に良い経験はなかったですが、一緒に奉仕する姉妹やみんなの経験を聞いて、本当に天使がバサバサ飛んでいて、城南城西だけでなく天とコラボしている感を感じられました。
+  
+  まだまだエホバが引き寄せたい人がいるんだと感じて、今後の奉仕も粘り強く意欲を持って行いたいと思えました。
+  
+  長老たちのアツい励ましや働きに本当に感謝です。ありがとうございました！
+  </p>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 03
+          </div>
+
+          <p class="impression-text">今回のコラボウィークは、家から家，アパート，公共エリア伝道など，たくさんの種類の奉仕を実演交えながら，楽しく行う事ができました。
+
+新奉仕年度にふさわしいイベントでよかったです。この熱意を引き続き維持できたら，と思います。
+
+準備してくださった皆さん、ありがとうございました♪</p>
+
+        </article>
+
+
+        <!-- 04 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 04
+          </div>
+
+          <p class="impression-text">喜びを、もって天使と共に働けました！</p>
+
+        </article>
+
+
+        <!-- 05 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 05
+          </div>
+
+          <p class="impression-text">普段一緒に奉仕することがない城南会衆の兄弟姉妹と奉仕出来る貴重な機会でした。
+
+公共エリアでの奉仕も水曜日の奉仕も、奉仕前の集まりの内容がとても充実していて、励みを得られました。
+
+ありがとうございました。</p>
+
+        </article>
+
+
+        <!-- 06 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 06
+          </div>
+
+          <p class="impression-text">今回のコラボ伝道では、計画から実施まで見えるところでも見えないところでも、綿密なご準備をしてくださりありがとうございます。
+
+個人的にはそれぞれ半日ずつの参加でしたが、とても楽しく活動することができました。
+行ったことのない区域を奉仕するのは楽しかったですし、城南の兄弟姉妹たちと交友を深められたのも楽しい経験でした。
+また、城西遠隔地の区域を城南の兄弟姉妹たちが喜んでくださっていたのがうれしかったです。
+
+個人的な3日間のレポートをお送りします 笑
+<br>
+●1日目
+翼兄弟・愛理姉妹・東瀬母と、猪苗代発電所手前の区域を奉仕しました。何件かの家の方にお会いでき断られはしたものの、穏やかな反応が多かったように思います。
+
+翼兄弟は移動中もいろいろ話題を提供してくださり、細やかに気遣ってくださいました。いつもそうですが、とても気遣いにあふれた兄弟です。
+
+愛理姉妹とは、じっくりと話ができたのは今回が初めてでしたが、翼兄弟も含めて高校など共通の話題も多く、楽しく話をする事ができました。
+姉妹が大変な中でも、エホバのためにたくさんのことをしていることをお聞きできて励みになりました。
+
+道の駅でおいしいソフトクリームを食べて帰りました。
+<br>
+●2日目
+一輝兄弟・佐藤りえ姉妹との大塚山付近の奉仕でした。暗くなってからの奉仕でしたが、家の明かりで在宅を確認出来て効率よくまわることができました。
+
+一輝兄弟はいつも明るく、何をするときでも楽しそうにしておられて元気をもらえています。奉仕のための集まりの司会も、要点の組み立てと流れが分かりやすくてとても参考になりました。
+
+りえ姉妹も体調がすぐれない中、自転車でいろいろと活動しておられることをお聞きできました。
+夕方のキャンペーンということもあり、姉妹は最初は証言するのを遠慮しておられました。しかし途中からは、ご自分でもインターホンを鳴らして家の方と会話をしようとしておられました。
+その家はちょうど私たちが玄関の前に来た時に、家の人が開いていた窓を閉めてしまい居留守のような状況でしたが、姉妹はインターホンを鳴らせたことを喜んでおられました。
+姉妹の勇気と、姉妹ご自身が挑戦したことを喜んでおられるのを見て、じーんとしました。
+エホバもイエスも天使たちも姉妹の勇気を見てくれていたと思います。
+
+グミの話で盛り上がって帰ってきました。
+<br>
+●3日目
+岡田兄弟・大関姉妹・東瀬母と三島方面の奉仕でした。
+
+岡田兄弟とも今回一緒に奉仕ができ、またじっくりと話ができて良かったです。兄弟が会衆のことや医療のことでいろいろと心を砕いてくださってくださっていることをお聞きできました。
+
+大関姉妹もお元気そうでよかったです。姉妹は過去の壮絶な反対を乗り越えてこられて、いつも前向きにエホバに仕えておられますが、その姿が私にとっての手本にもなっています。
+遠隔地ということもあり長時間の車の移動でしたが、岡田兄弟・大関姉妹とともに時間を過ごせて良かったです。
+
+道の駅のソフトクリームを食べて帰ってきましたが、コラボ期間中に合計2つソフトを食べたせいかその後お腹の調子を崩しました。
+
+母も2日間参加することができました。祈りの中で、「1日目は話したことのない姉妹と」・「3日目は知っている姉妹と」一緒に奉仕したいとエホバに伝えていたようです。
+
+結果的に、これまで話したことのなかった愛理姉妹・昔から親しくしているものの奉仕の機会はあまりなかった大関姉妹と奉仕ができて喜んでいました。</p>
+
+        </article>
+
+
+        <!-- 07 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 07
+          </div>
+
+          <p class="impression-text">日を増す事に盛り上がっていくのが見えてとても楽しかったです。
+皆、表情がイキイキしていて奉仕が大好きなのが伝わりとても励まされ嬉しかったです。
+
+「楽しかった」という感想があればこの企画は大成功と思っていましたが、それを遥かに上回る祝福の多い3日間でした。
+天の部分が忙しく働き、地上の部分の私たちがよく準備して狙って打つ時の喜びを皆で味わえて最高でした！</p>
+
+        </article>
+
+
+        <!-- 08 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 08
+          </div>
+
+          <p class="impression-text">参加した奉仕の時にはあまりお家の方にはお会いできませんでしたが、城南城西一丸となってキャンペーンに取り組んだ時、エホバが喜んで祝福してくださるのを感じました。まだまだ応じる方がいるのが分かったのも励みになります。
+
+今まで話したことのない城南の姉妹とも奉仕させて頂き、これから城南の方の経験ももっとお聞きしたいなぁ、と感じました。</p>
+
+        </article>
+
+
+        <!-- 09 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 09
+          </div>
+
+          <p class="impression-text">都合により、多くは参加できなかったんですが、城南会衆の兄弟姉妹と奉仕することにより知り合うことができ、とても良かったです。メンテナンスとは違った雰囲気を味わえました。
+
+集まりの内容も豊富で、実演もたくさん準備されており、今回だけでなく今後も役に立つ証言例をいくつも学ぶことができました。
+
+準備のために多くの時間を費やしてくださった兄弟たちの奉仕に感謝です。</p>
+
+        </article>
+
+
+        <!-- 10 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 10
+          </div>
+
+          <p class="impression-text">天使の働きを見させていただけて特権でした。兄弟達の熱心な働きに深く感謝しています。ありがとうございました。</p>
+
+        </article>
+
+
+        <!-- 11 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 11
+          </div>
+
+          <p class="impression-text">とにかく楽しくて疲れを感じなかった。城南の仲間を親しく知れてうれしかったのでまた企画してほしいです。</p>
+
+        </article>
+
+
+        <!-- 12 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 12
+          </div>
+
+          <p class="impression-text">素晴らしい企画をありがとうございました。様々な仲間達と働く一致の楽しさ、よく祈って準備して天使達と共に働く楽しさ、大切さたくさん教えられ感謝です。
+
+天使達が熱心に働いておられるんですねー。集まりや３つの実演､ワークショップも楽しかったです。
+
+意欲を高めてくださってありがとうこざいました。とても楽しい企画ありがとうございました🙇‍♀️</p>
+
+        </article>
+
+
+        <!-- 13 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 13
+          </div>
+
+          <p class="impression-text">初めてのコラボ奉仕とても楽しかったです✨️
+
+他の兄弟姉妹とも、沢山奉仕したいです✨️
+
+行ったことのない場所の奉仕や城西会衆の兄弟たちとの区域の奉仕でエホバが沢山、楽しめるようにしてくださりまた、沢山の祝福を得る事が出来ました。</p>
+
+        </article>
+
+
+        <!-- 14 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 14
+          </div>
+
+          <p class="impression-text">22日の夕方の奉仕に参加させて頂けました｡3人グループになり、城西の兄弟と訪問させて頂けました｡
+
+前もって質問をさせて頂き、家族構成と子供の時から伝道をされていたことを少しお聞きできたので、学ばせて頂けると思い、奉仕に出るのに緊張もしていたので、心強かったです。
+
+奉仕を終えて会館に戻ったときに兄弟の経験を質問されてお話されていましたが、本当にエホバのもとで、天使の働きがあり、奉仕ができていることを肌で感じました｡
+
+お話されていましたが、暮らせますの冊子を見せてすぐに聖書という言葉を使って訪問の目的をお伝えしていました｡そして、聖書に馴染んだことがあるかをお聞きしたら、間をいれずに、若い男性が、母親といて子供の時から聖書に触れていたことを答えて下さいました｡
+
+兄弟が、聖書の中で特に印象に残ってる言葉とかありますか？というような質問をしたときも、間をいれずにハキハキと男性は、「信じるものは救われる，ですね」と答えていました｡そこがとても印象に残りました｡
+
+20代の方なので、子供の頃の親元の感想ではなく、今の現在の自分の中にある回答の言葉だと私には思えたので｡間をいれずに答えておられたので、そう思えたのかもしれません。あとは、救われる、というのは、ある意味前向きな言葉かな、と思えました｡
+
+兄弟は、その答えを受けたあと、冊子を裏にして、ここからも聖書の言葉などを見れたりすることを紹介したのですが、男性は、そうなんですね、という反応で快く受け取っていました｡
+
+何となく、その様子から、若い人だと、自分の時間や自由さの中で、気軽に見たり調べたりすることを好む部分があるのかな、と私は感じたりしていました｡
+
+兄弟の自然な流れでの親切な奉仕に励まされましたし、学ばせて頂けました｡
+
+また、昼間ではない、夜のすんだ空気の中で夜空の星を眺めながら、創造物を楽しんでクリスチャン家族と共に奉仕できたことが嬉しかったです。
+
+様々な時間によい便りが伝えられていることも喜びに感じました｡
+
+少しでも、奉仕に参加できたら、と思いましたが、企画に参加させて頂けて感謝でいっぱいでした｡ありがとうございました。</p>
+
+        </article>
+
+
+        <!-- 15 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 15
+          </div>
+
+          <p class="impression-text">これまであまり親しく話しをする事もなかった城南の姉妹たちと共に奉仕し親しくなれて良かったです。お昼の交わりも和気あいあいと楽しかったです。
+
+奉仕の集まりで司会の兄弟が「コラボ奉仕に天使たちもコラボしていて翼をバサバサはばたかせて共に奉仕している」と言う言葉が印象的でした。
+
+これからも天使たちが奉仕にコラボしていることを意識して奉仕して行きたいと思います。
+
+コラボ奉仕のため計画し準備してくださった兄弟姉妹たちに感謝しています。</p>
+
+        </article>
+
+
+        <!-- 16 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 16
+          </div>
+
+          <p class="impression-text">楽しかったです。</p>
+
+        </article>
+
+
+        <!-- 17 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 17
+          </div>
+
+          <p class="impression-text">城西とのコラボだけでなく　天使とのコラボだという考え方にとっても力をいただきました。
+
+私、公共の時は緊張するのでいつも天使がいてくださると思って空を見ると笑顔になるんですが、今回も嬉しくなって笑顔が増えてたように思います。</p>
+
+        </article>
+
+
+        <!-- 18 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 18
+          </div>
+
+          <p class="impression-text">素晴らしい計画をありがとうございました。
+
+全ての奉仕やギャザリングに参加できませんでしたがお互いの区域の方々に心を一つにして取り組めとーっても楽しかったです。これからの奉仕に対する気持ちが高まりました。
+
+城南の兄弟姉妹たちと親交を深められたことも、また、その都度その都度の集まりもとても良かったです。勉強になりました。
+
+兄弟たち本当にお疲れ様でした。また年に1度ぐらい計画をお願いいたします。本当にありがとうございました。</p>
+
+        </article>
+
+
+        <!-- 19 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 19
+          </div>
+
+          <p class="impression-text">エホバとイエス、天使たちとコラボして、この会津の区域を祝福してくださっていると実感しました！！
+
+この会津の人々をより一層愛したいと思えるようになりました！</p>
+
+        </article>
+
+
+        <!-- 20 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 20
+          </div>
+
+          <p class="impression-text">初日は台風の影響があったものの、城西・城南会衆の仲間と働いてとても爽やかにされました。
+
+これまで「お隣の会衆の仲間」という認識もありましたが、同じエホバの家族の絆で結ばれているんだと改めて感じました。
+
+一緒に働いた兄弟姉妹が持たれる信仰や愛がもっと身近になり、これからも頑張っていこうという決意が強まりました。
+
+会津の区域に天使がいっぱい集まってるんだなと、天の部分とコラボしている気持ちも実感できました。
+
+また機会があればこうしたコラボ奉仕がしたいなと心から願っています。
+
+企画・計画してくださった兄弟たち、サポートしてくださった兄弟姉妹、本当にありがとうございます！</p>
+
+        </article>
+
+
+        <!-- 21 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 21
+          </div>
+
+          <p class="impression-text">Deep emotion</p>
+
+        </article>
+
+
+        <!-- 22 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 22
+          </div>
+
+          <p class="impression-text">めっちゃ楽しかったです✨天使の羽音が‘バサバサ’聞こえて、エホバとイエスと天使たちとコラボしてる〜って感じました。
+
+兄弟たちの準備に感謝です。ありがとうございました😊</p>
+
+        </article>
+
+
+        <!-- 23 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 23
+          </div>
+
+          <p class="impression-text">三日間本当に楽しくて，奉仕の集まりや，城西会衆の兄弟姉妹の奉仕の取り組み方や経験等分かちて頂いて，自分にとって忘れられないキャンペーンになりました。
+
+エホバと天使の導きを感じました。
+
+計画して下さり本当にありがとうございました。
+
+是非教えて頂いた事を今後の奉仕に生かしてゆきたいと思います。</p>
+
+        </article>
+
+
+        <!-- 24 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 24
+          </div>
+
+          <p class="impression-text">コラボ奉仕企画の為に沢山の準備をして下さった兄弟姉妹に感謝します。
+
+エホバとイエスと天使と一緒に働けて、愛と平和と一致を味わえました。</p>
+
+        </article>
+
+
+        <!-- 25 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 25
+          </div>
+
+          <p class="impression-text">懐かしい城西会衆の兄弟姉妹と一緒に働かせていただき、とても嬉しかったです。そして、三島の奉仕、ずっーと長距離を運転してくださり感謝でしたし、あんなに遠い所にまで奉仕されてる姿にとても励まされました✨️
+
+帰りに食べたソフトクリーム、とっても美味しかったですし、皆さんと一緒に写真も撮っていただき、良い思い出になりました☺️
+
+七日町の公共エリア奉仕や家からの家の奉仕、とても新鮮でした。
+
+一緒に働かせていただいた姉妹が、1件目から良い話し合いができ、暮らせますを受けとられ、続けて再訪問やレッスンができそうで、天使たちがコラボしているというお話の通りだな〜と感じました✨️
+
+本当に有意義で爽やかで楽しい3日間、ありがとうございました☺️</p>
+
+        </article>
+
+
+        <!-- 26 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 26
+          </div>
+
+          <p class="impression-text">長年城西にいる両親が、このように城南の仲間と一緒のイベントは初めてだと喜んでおりました。
+
+昔懐かしい兄弟姉妹と一緒に奉仕できて、楽しそうでした。
+
+企画等にたくさんの時間をかけてくださったことと思います。どうもありがとうございました。</p>
+
+        </article>
+
+
+        <!-- 27 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 27
+          </div>
+
+          <p class="impression-text">城南会衆とのコラボという刺激的な取り組みは、私達が、普段より一歩努力することが求められました。しかしそれは良い経験となりました。
+
+伝道を​する時の大切なものを、私はエホバ神から教えられた気がしました。分かってはいたけど、よくは分かっていなかったんです。
+
+もちろん普通に伝道してもエホバ神のご意志を行なっています。しかし熱い心で伝道するなら、エホバ神をもっと喜ばせることができるという事でした。
+
+良い計画してくださり感謝いたします。そして城南会衆の仲間といっそう近くになったのも良かったです。</p>
+
+        </article>
+
+
+        <!-- 28 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 28
+          </div>
+
+          <p class="impression-text">コラボ奉仕、お疲れ様でした。
+
+すごく新鮮で、楽しかったです。
+SPCを思い出しました。
+同じ区域でも、また違った感覚でした。
+
+僕自身は特に大きな経験があったわけではありませんでしたが、周りの報告を聞いていると、エホバがこのキャンペーンを祝福してくださっているんだなと思えました。
+<br>
+---
+<br>
+コラボ最終日は、僕は一日仕事で参加できませんでした。
+<br>
+職場のスタッフに不幸があり、いつもよりハードなスケジュールでの仕事で、連勤の最終日でもありました。
+心も体も疲れていました。
+<br>
+仕事をしながら、
+「みんなどこ行ってるのかな〜。楽しんでるだろうなー」
+と想像していました。
+<br>
+メンタルがやられている時、僕は仲間の顔を見たいって思うんです。
+車の中からでも、一瞬でも。
+それだけで元気になれるんです。
+
+その気持ちを祈りました。
+<br>
+その日は、担当ではない仕事を、いつもとは違う時間帯にすることになりました。
+
+すると、次から次へと、奉仕帰りの仲間が入店してきたんです。
+
+僕に気づいて声をかけてくれたり、手を振ってくれたり……。
+写真まで撮ってくれたりして（笑）。
+
+嬉しかったです。元気がもらえました。
+
+その時、エホバを感じられました。
+<br>
+些細な祈りでも、僕の必要を感じて、仲間を通して助けてくださったように感じました。
+
+本当に感謝です。</p>
+
+        </article>
+
+
+        <!-- 29 -->
+
+        <article class="impression-card">
+
+          <div class="number">
+            VOICE 29
+          </div>
+
+          <p class="impression-text">3日目だけの参加でしたがとても良い雰囲気で盛り上がってましたね。
+
+機会があればまた城西会衆の遠隔地奉仕に(ドライブを兼ねて)行ってみたいと思いました。</p>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- =========================
+           CLOSING
+      ========================= -->
+
+      <div class="closing">
+
+        <h3 class="closing-title">
+          ありがとうございました
+        </h3>
+
+        <p>
+          城南 × 城西の仲間と共に過ごした<br>
+          3日間の思い出と喜びを、これからの奉仕にも。
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       BACK
+  ========================= -->
+
+  <section class="back-section">
+
+    <a
+      class="back-button"
+      href="index.html"
+    >
+      ← トップページへ戻る
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    城南 × 城西 伝道コラボキャンペーン 2026
+
+    <br>
+
+    2026.09.21 — 09.23
+
+  </footer>
+
+
+</body>
+
+</html>

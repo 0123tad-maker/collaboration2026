@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>経験・感想 | 城南 × 城西 伝道コラボキャンペーン 2026</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        sans-serif;
+
+      text-align: center;
+      color: #4c4c47;
+      background: #faf8f3;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 55svh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 60px 20px;
+
+      color: white;
+
+      /* 写真なしの背景 */
+      background: linear-gradient(
+        135deg,
+        #344b57,
+        #263941
+      );
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .hero-small {
+      margin-bottom: 22px;
+
+      font-size: 10px;
+      letter-spacing: 6px;
+
+      opacity: .7;
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      font-size: clamp(30px, 8vw, 48px);
+      font-weight: 400;
+
+      line-height: 1.5;
+      letter-spacing: 4px;
+    }
+
+    .hero p {
+      margin: 24px 0 0;
+
+      font-size: 13px;
+      line-height: 2;
+
+      opacity: .8;
+    }
+
+
+    /* =========================
+       CHOICE
+    ========================= */
+
+    .choice-section {
+      padding: 80px 18px 95px;
+
+      background: linear-gradient(
+        180deg,
+        #faf8f3,
+        #f2eee7
+      );
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+
+      margin: 0 auto;
+    }
+
+    .section-label {
+      margin-bottom: 12px;
+
+      font-size: 10px;
+      letter-spacing: 6px;
+
+      color: #9b8b75;
+    }
+
+    .choice-title {
+      margin: 0 0 14px;
+
+      font-size: 27px;
+      font-weight: 400;
+
+      letter-spacing: 3px;
+    }
+
+    .choice-description {
+      margin: 0 auto 42px;
+
+      color: #777;
+
+      font-size: 13px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .choice-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 20px;
+
+      max-width: 720px;
+
+      margin: 0 auto;
+    }
+
+    .choice-card {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
+      min-height: 260px;
+
+      padding: 35px 20px;
+
+      border-radius: 24px;
+
+      text-decoration: none;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 15px 40px rgba(70, 60, 45, .10);
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+    }
+
+    .choice-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 20px 45px rgba(70, 60, 45, .16);
+    }
+
+    .choice-card:active {
+      transform: scale(.97);
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience {
+      color: #294455;
+
+      background: linear-gradient(
+        145deg,
+        #dce9ef,
+        #f1f5f5
+      );
+    }
+
+
+    /* IMPRESSION */
+
+    .impression {
+      color: #5b4937;
+
+      background: linear-gradient(
+        145deg,
+        #f0e1cf,
+        #f8f2e9
+      );
+    }
+
+
+    .card-icon {
+      margin-bottom: 18px;
+
+      font-size: 48px;
+      line-height: 1;
+
+      opacity: .75;
+    }
+
+    .card-en {
+      margin-bottom: 7px;
+
+      font-size: 9px;
+      letter-spacing: 5px;
+
+      opacity: .55;
+    }
+
+    .card-title {
+      font-size: 27px;
+      font-weight: 400;
+
+      letter-spacing: 4px;
+    }
+
+    .card-description {
+      margin-top: 15px;
+
+      font-size: 12px;
+      line-height: 1.9;
+
+      opacity: .72;
+    }
+
+    .arrow {
+      margin-top: 20px;
+
+      font-size: 18px;
+
+      opacity: .6;
+
+      transition:
+        transform .25s ease;
+    }
+
+    .choice-card:hover .arrow {
+      transform: translateX(5px);
+    }
+
+
+    /* =========================
+       BACK
+    ========================= */
+
+    .back-section {
+      padding: 45px 20px 55px;
+
+      background: #fffaf4;
+    }
+
+    .back-button {
+      display: inline-block;
+
+      padding: 12px 27px;
+
+      border: 1px solid #c8c1b5;
+      border-radius: 50px;
+
+      color: #777;
+
+      text-decoration: none;
+
+      font-size: 12px;
+      letter-spacing: 1px;
+
+      transition:
+        background .2s ease,
+        color .2s ease;
+    }
+
+    .back-button:hover {
+      background: #425a6b;
+
+      border-color: #425a6b;
+
+      color: white;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 38px 20px;
+
+      background: #202b31;
+
+      color: #9ca6aa;
+
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      .hero {
+        min-height: 50svh;
+      }
+
+      .hero h1 {
+        font-size: 29px;
+        letter-spacing: 3px;
+      }
+
+      .choice-section {
+        padding: 65px 16px 75px;
+      }
+
+      .choice-title {
+        font-size: 24px;
+      }
+
+      .choice-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+      }
+
+      .choice-card {
+        min-height: 220px;
+      }
+    }
+
+
+    /* =========================
+       REDUCED MOTION
+    ========================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="hero-small">
+        JONAN × JOSEI
+      </div>
+
+      <h1>
+        経験・感想
+      </h1>
+
+      <p>
+        3日間の活動を通して<br>
+        寄せられた声をご覧ください。
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CHOICE
+  ========================= -->
+
+  <section class="choice-section">
+
+    <div class="container">
+
+      <div class="section-label">
+        VOICES
+      </div>
+
+      <h2 class="choice-title">
+        どちらをご覧になりますか？
+      </h2>
+
+      <p class="choice-description">
+        3日間の活動で得られた経験と、<br>
+        一緒に活動した仲間から寄せられた感想。
+      </p>
+
+
+      <div class="choice-grid">
+
+
+        <!-- =====================
+             EXPERIENCE
+        ====================== -->
+
+        <a
+          class="choice-card experience"
+          href="experience.html"
+        >
+
+          <div class="card-icon">
+            ✦
+          </div>
+
+          <div class="card-en">
+            EXPERIENCE
+          </div>
+
+          <div class="card-title">
+            経験
+          </div>
+
+          <div class="card-description">
+            3日間の活動で得られた<br>
+            経験や出来事をご紹介します。
+          </div>
+
+          <div class="arrow">
+            →
+          </div>
+
+        </a>
+
+
+        <!-- =====================
+             IMPRESSION
+        ====================== -->
+
+        <a
+          class="choice-card impression"
+          href="impressions.html"
+        >
+
+          <div class="card-icon">
+            ♡
+          </div>
+
+          <div class="card-en">
+            IMPRESSIONS
+          </div>
+
+          <div class="card-title">
+            感想
+          </div>
+
+          <div class="card-description">
+            一緒に活動した仲間の<br>
+            感想や思いをご紹介します。
+          </div>
+
+          <div class="arrow">
+            →
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       BACK
+  ========================= -->
+
+  <section class="back-section">
+
+    <a
+      class="back-button"
+      href="index.html"
+    >
+      ← トップページへ戻る
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    城南 × 城西 伝道コラボキャンペーン 2026
+
+    <br>
+
+    2026.09.21 — 09.23
+
+  </footer>
+
+
+</body>
+
+</html>
