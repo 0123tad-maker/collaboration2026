@@ -55,16 +55,41 @@
       position: relative;
       overflow: hidden;
       color: white;
+      background: #263a44;
+    }
 
-      background-image:
+    /* PC・iPad：
+       背面は同じ写真をぼかして画面いっぱいにし、
+       前面では写真全体を切らずに表示 */
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      inset: -32px;
+      background:
         linear-gradient(
-          rgba(20,40,50,.45),
-          rgba(20,40,50,.55)
+          rgba(20,40,50,.50),
+          rgba(20,40,50,.60)
         ),
-        url("title.jpg");
+        url("title.jpg") center / cover no-repeat;
+      filter: blur(24px);
+      transform: scale(1.08);
+      z-index: 0;
+    }
 
-      background-size: cover;
-      background-position: center;
+    .hero::after {
+      background:
+        linear-gradient(
+          rgba(20,40,50,.30),
+          rgba(20,40,50,.40)
+        ),
+        url("title.jpg") center / contain no-repeat;
+      z-index: 1;
     }
 
     .hero-inner {
@@ -941,6 +966,20 @@
 
     @media (max-width: 600px) {
 
+      /* iPhoneは従来どおり画面いっぱい */
+      .hero::before {
+        display: none;
+      }
+
+      .hero::after {
+        background:
+          linear-gradient(
+            rgba(20,40,50,.45),
+            rgba(20,40,50,.55)
+          ),
+          url("title.jpg") center / cover no-repeat;
+      }
+
       section {
         padding: 68px 16px;
       }
@@ -1652,22 +1691,3 @@
 </body>
 
 </html>
-<style>
-  /* ===== トップ画像：iPad・PC対応 ===== */
-  
-  /* iPad・PC */
-  .hero {
-    background-size: contain !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-color: #24343d !important;
-  }
-  
-  /* iPhone */
-  @media (max-width: 600px) {
-    .hero {
-      background-size: cover !important;
-      background-position: center center !important;
-    }
-  }
-</style>
