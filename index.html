@@ -1652,3 +1652,22 @@
 </body>
 
 </html>
+<style>
+  /* ===== トップ画像：iPad・PC対応 ===== */
+  
+  /* iPad・PC */
+  .hero {
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #24343d !important;
+  }
+  
+  /* iPhone */
+  @media (max-width: 600px) {
+    .hero {
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+  }
+</style>
